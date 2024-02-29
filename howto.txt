@@ -1,0 +1,3 @@
+cd "C:\Users\Faust\OneDrive\Escritorio\Tesis\Website"
+venv\Scripts\activate
+streamlit run app.py
