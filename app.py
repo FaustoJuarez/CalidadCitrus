@@ -24,8 +24,8 @@ with st.sidebar:
 
     # Model Options
     confidence = 0.15
-    float(st.slider(
-        "Nivel de confianza del modelo", 25, 100, 40)) / 100
+    #float(st.slider(
+    #    "Nivel de confianza del modelo", 25, 100, 40)) / 100
 
 # Creating main page heading
 st.title("Control de Calidad - Lapacho Amarillo")
@@ -53,7 +53,7 @@ except Exception as ex:
 
 if st.sidebar.button('Detectar calidad de limon'):
     res = model.predict(uploaded_image,
-                        conf=confidence
+                        #conf=confidence
                         )
     boxes = res[0].boxes
     res_plotted = res[0].plot()[:, :, ::-1]
