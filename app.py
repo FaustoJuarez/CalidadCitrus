@@ -24,8 +24,8 @@ with st.sidebar:
 
     # Model Options
     confidence = 0.15
-    # float(st.slider(
-    #    "Nivel de confianza del modelo", 25, 100, 40)) / 100
+    float(st.slider(
+        "Nivel de confianza del modelo", 25, 100, 40)) / 100
 
 # Creating main page heading
 st.title("Control de Calidad - Lapacho Amarillo")
